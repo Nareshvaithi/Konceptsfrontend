@@ -133,7 +133,7 @@ const MapComponent = () => {
     <div className="container flex flex-col">
       
       <div className='flex items-center gap-3'>
-        <p className='font-ContentText text-2xl text-darkblue'>our latest work</p>
+        <p className='font-ContentText text-2xl text-darkblue'>Our Latest Work</p>
         
         {/* Dropdown for Websites */}
         <div className="relative z-10 mb-4 mt-2">

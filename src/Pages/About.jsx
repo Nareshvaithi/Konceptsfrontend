@@ -1,4 +1,5 @@
 import AboutExpCard from "../Components/Aboutcomp/AboutExpCard";
+import EmployeCard from "./EmployeCard";
 import { AboutHero } from "../Components/Aboutcomp/AboutHero";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
@@ -37,6 +38,8 @@ import { TbBrandAdonisJs } from "react-icons/tb";
 import { BiBarChartAlt } from "react-icons/bi";
 import { PiCodeBlockFill } from "react-icons/pi";
 import { CgWebsite } from "react-icons/cg";
+// import {EmployeCard} from "./EmployeCard"
+
 const About = ()=>{
     const ExperienceCard=[
         {
@@ -51,13 +54,16 @@ const About = ()=>{
             about2:'The author of the course "UX Thinking and Structuring Before Creating UI" and the winner of the Telegram competition for redesigning the Android app.',
             proficient:['finance','banking','telecommunication','healthcare','accessiblity','travel and leisure','ai chats','other'],
             socialmedia:[<FaLinkedinIn/>,<SiInstagram/>,<FaFacebookF/>,<FaXTwitter/>,<ImWhatsapp/>]
-        },
+        }
+    ]
+   
+    const employeeCard=[
         {
-            id:2,
+            id:1,
             ProfilePic:EmptyPic,
             Name:"Sridhar Natrajan",
             title:"Founder, UX/UI LEAD",
-            exp:8,
+            exp:9,
             profession:"design",
             icon:Aboutcardicon,
             about1:"Founder and lead designer at UXIS, specializes in deep UX/UI design for complex product interfaces. Achieving an 88% success rate in planned KPIs after redesigns.",
@@ -65,6 +71,33 @@ const About = ()=>{
             proficient:['finance','banking','telecommunication','healthcare','accessiblity','travel and leisure','ai chats','other'],
             socialmedia:[<FaLinkedinIn/>,<SiInstagram/>,<FaFacebookF/>,<FaXTwitter/>,<ImWhatsapp/>]
         },
+        // {
+        //     id:1,
+        //     ProfilePic:EmptyPic,
+        //     Name:"Sridhar Natrajan",
+        //     title:"Founder, UX/UI LEAD",
+        //     exp:9,
+        //     profession:"design",
+        //     icon:Aboutcardicon,
+        //     about1:"Founder and lead designer at UXIS, specializes in deep UX/UI design for complex product interfaces. Achieving an 88% success rate in planned KPIs after redesigns.",
+        //     about2:'The author of the course "UX Thinking and Structuring Before Creating UI" and the winner of the Telegram competition for redesigning the Android app.',
+        //     proficient:['finance','banking','telecommunication','healthcare','accessiblity','travel and leisure','ai chats','other'],
+        //     socialmedia:[<FaLinkedinIn/>,<SiInstagram/>,<FaFacebookF/>,<FaXTwitter/>,<ImWhatsapp/>]
+        // },        {
+        //     id:1,
+        //     ProfilePic:EmptyPic,
+        //     Name:"Sridhar Natrajan",
+        //     title:"Founder, UX/UI LEAD",
+        //     exp:9,
+        //     profession:"design",
+        //     icon:Aboutcardicon,
+        //     about1:"Founder and lead designer at UXIS, specializes in deep UX/UI design for complex product interfaces. Achieving an 88% success rate in planned KPIs after redesigns.",
+        //     about2:'The author of the course "UX Thinking and Structuring Before Creating UI" and the winner of the Telegram competition for redesigning the Android app.',
+        //     proficient:['finance','banking','telecommunication','healthcare','accessiblity','travel and leisure','ai chats','other'],
+        //     socialmedia:[<FaLinkedinIn/>,<SiInstagram/>,<FaFacebookF/>,<FaXTwitter/>,<ImWhatsapp/>]
+        // }
+
+
     ]
     const MindSet = {
         Part1:[
@@ -95,22 +128,10 @@ const About = ()=>{
         ],
         part2:[
             {
-                id:5,
-                icon:``,
-                title:'',
-                details:"",
-            },
-            {
                 id:6,
                 icon:<CgWebsite/>,
                 title:'Web Design',
                 details:'Our web designer is responsible for creating the design, layout and coding of a website.They are involved with the technical and graphical aspects of a website',
-            },
-            {
-                id:7,
-                icon:``,
-                title:'',
-                details:"",
             },
             
             {
@@ -163,9 +184,12 @@ const About = ()=>{
             <div id="team" className="grid grid-cols-1 md:grid-cols-2">
                {
                    ExperienceCard.map((items,index)=>{
-                       return <AboutExpCard key={index} {...items}/>
+                       return <>
+                        <div><AboutExpCard key={index} {...items}/></div>
+                        </>
                    })
                }
+               <EmployeCard />
             </div>
             {/* our mindset */}
             <div className="w-full md:flex">

@@ -45,7 +45,7 @@ const ReviewSlider = () => {
     >
       {SliderReview.map((item, index) => (
         <SwiperSlide className="w-full h-full flex justify-center items-center px-20" key={index}>
-          <div className='flex gap-y-40 flex-col justify-between'>
+          <div className='flex gap-y-10 flex-col justify-between'>
             <div className='w-full'>
               <h1 className='text-2xl'>{item.review}</h1>
             </div>

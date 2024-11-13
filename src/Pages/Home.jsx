@@ -7,7 +7,7 @@ const Home = ()=>{
  
     return(
         <>
-        <div>
+        <div className="">
             <BackgroundSlider/>
             <DesignPreviewSlider/>
             {/* <FaqAccordian/> */}

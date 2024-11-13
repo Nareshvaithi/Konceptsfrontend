@@ -13,9 +13,9 @@ export const AboutHero = () => {
         <p className='font-ContentText text-lg font-bold'>Who We Are</p>
       </div>
       <div>
-        <h1 className='mx-auto font-Heading abouttext'>We are a remote design team with strong experience in creating UX/UI solutions</h1>
+        <h1 className='mx-auto font-Heading abouttext mt-15 lg:text-5xl'>We are a remote design team with strong experience <span className='md:pl-40'>in creating UX/UI solutions</span></h1>
       </div>
-      <div className='py-20'>
+      <div className='md:py-40 py-20'>
           <button onClick={moveteam} className='border-2 border-slate-950 w-fit mx-auto rounded-full p-3 flex items-center transition-all duration-300 hover:scale-95'>
             <span className='font-ContentText font-semibold'>Leadership team</span>
             <img src={downarrow} alt="Downarrow"/>

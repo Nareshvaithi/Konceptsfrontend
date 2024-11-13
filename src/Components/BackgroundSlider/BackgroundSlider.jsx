@@ -6,7 +6,7 @@ import "./../BackgroundSlider/slider.css";
 function BackgroundSlider() {
   return (
     <>
-    <div className='slider-section'>
+    <div className='slider-section w-full'>
     <Carousel>
       <Carousel.Item interval={1000}>
         <div className='slide1' text="First slide">
