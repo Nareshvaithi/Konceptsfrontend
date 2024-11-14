@@ -1,4 +1,4 @@
-const StarRating = ({id,rating,stars,quality,schedule,cost,Will2Ref})=>{
+const StarRating = ({id,rating,stars,quality,schedule,cost,Will2Ref,img})=>{
     return(
         <div className="border border-gray-200 w-full h-[350px] flex flex-col justify-between aboutExpCardContainer">
             <div>

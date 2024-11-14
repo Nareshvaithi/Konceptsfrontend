@@ -26,7 +26,7 @@ const Footer = ()=>{
                         </div>
                         
                         <ul className="w-1/2 md:w-1/4 pl-0">
-                            <p className="font-bold text-xl">services</p>
+                            <p className="font-bold text-xl">Services</p>
                             {Services.map((items,index)=>(
                                 <li onClick={()=>moveServicesPages(items.to)} key={index} className={`${items.id === 2 ? "list-disc text-sm py-1 ml-7":"list-none py-2"} cursor-pointer`}>{items.service}</li>
                             ))}

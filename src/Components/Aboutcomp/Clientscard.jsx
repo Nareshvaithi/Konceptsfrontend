@@ -13,8 +13,8 @@ const ClientsCard = ({id,logo})=>{
     
  
     return(
-        <div className="w-full border border-gray-200 flex justify-center items-center px-2 py-20 md:py-32">
-            <div className={`${logoadj(id)} ${logoad2(id)} w-44`}>
+        <div className="w-full border border-gray-200 flex justify-center px-2">
+            <div className={`${logoadj(id)} ${logoad2(id)} w-44 h-40 pt-10`}>
                 <img loading="lazy" src={logo} className="w-full" alt="" />
             </div>
         </div>
