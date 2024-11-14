@@ -290,8 +290,8 @@ const About = ()=>{
                 </div>
                 <div>
                     {
-                        verticals.map(({title},index)=>{
-                            return <span key={index} className="border-1 w-40 mr-2 mb-2 border-black px-4 py-2 rounded-full font-bold text-[14px] text-center tracking-widest block uppercase hover:bg-darkblue hover:text-white">{title}</span>
+                        verticals.map(({title,id},index)=>{
+                            return <span key={index} className={`${id === 2 ? "ml-10":""} border-1 w-40 mr-2 mb-2 border-black px-4 py-2 rounded-full font-bold text-[14px] text-center tracking-widest block uppercase hover:bg-darkblue hover:text-white`}>{title}</span>
                         })
                     }
                 </div>

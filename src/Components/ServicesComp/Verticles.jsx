@@ -20,7 +20,7 @@ export const verticals = [
 const Verticles = ()=>{
 
     return(
-        <div className="heightcustom">
+        <div className="">
             <div className="container">
                 <h1 className="text-center font-Heading pb-3 text-2xl font-bold text-darkblue">Our Verticals</h1>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-y-5">
