@@ -3,12 +3,14 @@
     padding: 0;
 }
 .slide1{
-    background-image: url(../../assets/Images/banner01.png);
+    /* background-image: url(../../assets/Images/banner01.png); */
     height: 640px;
     position: relative;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid blue;
+
 }
 .slide2{
     background-image: url(../../assets/Images/banner02.jpg);
@@ -24,13 +26,12 @@
     height: 640px;
     position: relative;
     background-position: center;
-
     background-size: contain;
     background-repeat: no-repeat;
 }
 .slider-section{
-    width: 100vh;
-    height: 1000px;
+    width: 100%;
+    height: 100vh;
     position: relative;
 }
 @media only screen and (max-width:600px) {
