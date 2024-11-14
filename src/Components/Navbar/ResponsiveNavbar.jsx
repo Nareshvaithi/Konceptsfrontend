@@ -145,7 +145,8 @@ const ResponsiveNavbar = ()=>{
             <div className="container w-full flex flex-wrap justify-between twmt">
                 <div className="w-full md:w-1/3">
                     <h1 className="text-xl font-bold">INDIA</h1>
-                    <p className="w-56">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolores.</p>
+                    <p className="w-56">#20 First Street, Sriram Nagar, Achariyapuram, Urivaiyar, (Near Achariya school)
+                    Puducherry - 605110</p>
                 </div>
                 <div className="w-full md:w-1/3">
                     <h1 className="text-xl font-bold">FOLLOW US</h1>

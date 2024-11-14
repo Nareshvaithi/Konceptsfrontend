@@ -16,7 +16,7 @@ const AboutService = ()=>{
         navigate('/contact');
     }
     return(
-        <div className="heightcustom w-full flex">
+        <div className="py-24 w-full flex">
             <div className="container my-auto w-full md:flex border-1 border-gray-200">
                <div className="aboutExpCardContainer w-full md:w-1/2 my-auto">
                     <h1 className='font-Heading text-5xl md:text-6xl font-bold'>Responsive.</h1>

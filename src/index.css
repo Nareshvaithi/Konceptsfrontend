@@ -103,9 +103,6 @@
     @apply border-2 border-darkblue hover:bg-darkblue hover:text-white text-darkblue bg-white w-fit no-underline rounded-full py-3 px-5 md:px-10 text-lg md:text-2xl mt-5 flex items-center gap-3 transition-all duration-300 hover:scale-95
 }
 
-.heightcustom{
-    @apply h-auto md:h-screen pt-24 pb-10 md:pb-10 md:py-0
-}
 
 .headj{
     @apply h-auto md:h-screen

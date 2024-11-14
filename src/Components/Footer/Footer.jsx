@@ -28,13 +28,13 @@ const Footer = ()=>{
                         <ul className="w-1/2 md:w-1/4 pl-0">
                             <p className="font-bold text-xl">Services</p>
                             {Services.map((items,index)=>(
-                                <li onClick={()=>moveServicesPages(items.to)} key={index} className={`${items.id === 2 ? "list-disc text-sm py-1 ml-7":"list-none py-2"} cursor-pointer`}>{items.service}</li>
+                                <li onClick={()=>{moveServicesPages(items.to);window.scrollTo(0,0)}} key={index} className={`${items.id === 2 ? "list-disc text-sm py-1 ml-7":"list-none py-2"} cursor-pointer`}>{items.service}</li>
                             ))}
                         </ul>
                         <ul className="w-1/2 md:w-1/4 pl-0">
                             <p className="font-bold text-xl">Openning</p>
                             {hiringing.map((items,index)=>(
-                                <li key={index} className={`${items.id === 2 ? "list-disc text-sm py-1 ml-7":"list-none py-2"}`}>{items.openning}</li>
+                                <li key={index} onClick={()=>{navigate("/carrier"); window.scrollTo(0,0)}} className={`${items.id === 2 ? "list-disc text-sm py-1 ml-7":"list-none py-2"} cursor-pointer`}>{items.openning}</li>
                             ))}
                         </ul>
                         <ul className="w-1/2 md:w-1/4 pl-0">

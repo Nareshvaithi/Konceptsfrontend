@@ -31,4 +31,8 @@ function BackgroundSlider() {
 };
 
 export default BackgroundSlider
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52f00ac378beceea99e48b731ccbf79609b2766f
 
