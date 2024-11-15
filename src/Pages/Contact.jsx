@@ -99,12 +99,20 @@ console.log(contactData.budget)
                                                     <label htmlFor={item.name} className="text-[15px] md:text-xl">{item.detail}</label>
                                                 </div>
                                                 <div className="w-[75%] border-b border-darkblue relative after:w-[0] after:absolute after:content-[''] after:bg-darkblue after:h-[2px] after:-bottom-[2px] after:left-0 after:duration-1000 group-hover:after:w-[100%] group-focus-within:after:w-[100%]">
-                                                    <input onChange={handleChange} type={item.type} name={item.name} id={item.name} className="outline-none w-full text-[16px] md:text-xl text-darkblue py-3 px-2"/>
+                                                    <input onChange={handleChange} type={item.type} name={item.name} id={item.name} className="outline-none w-full text-[16px] md:text-xl text-darkblue py-3 px-4"/>
                                                 </div>
                                             </div>
                                         {errors[item.name] && <p className="text-red-500 text-[15px] font-light">{errors[item.name]}</p>}
                                     </div>
                                 ))}
+                                   <div className="flex w-full group items-center mb-2">
+                                                <div className="w-[25%] border-b border-darkblue py-[25px] md:py-[40px]">
+                                                    <label htmlFor="" className="text-[15px] md:text-xl">Project Details</label>
+                                                </div>
+                                                <div className="w-[75%] border-b py-[9px] border-darkblue relative after:w-[0] after:absolute after:content-[''] after:bg-darkblue after:h-[2px] after:-bottom-[2px] after:left-0 after:duration-1000 group-hover:after:w-[100%] group-focus-within:after:w-[100%]">
+                                                    <textarea onChange={handleChange} rows={3} cols={6} className="outline-none w-full text-[16px] md:text-xl text-darkblue px-4"></textarea>
+                                                </div>
+                                    </div>
                             </div>
                             <div className="w-full md:w-1/2">
                                 <div className="px-3 py-3">
@@ -126,16 +134,9 @@ console.log(contactData.budget)
                                 {errors.services && <p className="text-red-500 text-[15px] ml-4 font-light">{errors.services}</p>}
                             </div>
                         </div>
-                        <div className='mt-3'>
-                        <div className="flex w-full group items-center mb-2">
-                                                <div className="w-[35%] border-b border-darkblue py-[12px]">
-                                                    <label htmlFor="" className="text-[15px] md:text-xl">Project Details</label>
-                                                </div>
-                                                <div className="w-[65%] border-b py-[9px] border-darkblue relative after:w-[0] after:absolute after:content-[''] after:bg-darkblue after:h-[2px] after:-bottom-[2px] after:left-0 after:duration-1000 group-hover:after:w-[100%] group-focus-within:after:w-[100%]">
-                                                    <textarea onChange={handleChange} rows={1} cols={6} className="outline-none w-full text-[16px] md:text-xl text-darkblue px-2"></textarea>
-                                                </div>
-                                            </div>
-                        </div>
+    
+                     
+                        
                         <div className="flex justify-center mt-3">
                             <button type="submit" className="bg-darkblue hover:bg-darkblue/80 rounded-full font-bold text-white text-lg px-5 py-3">Submit</button>
                         </div>
